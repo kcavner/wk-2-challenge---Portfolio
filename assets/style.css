@@ -118,6 +118,16 @@ a:hover{
     justify-content: center;
     font-size: 7vw;
 }
+#sites-title2{
+    
+    display: flex;
+    padding: 5vw;
+    color: var(--dimgrey);
+    margin-bottom: 4vw;
+    width: 10vw;
+    justify-content: center;
+    font-size: 7vw;
+}
 #bottom-article{
     display: flex;
     justify-content: center;
