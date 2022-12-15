@@ -1,0 +1,218 @@
+/* global color variables */
+:root {
+    --gainsboro: #E2DADB;
+    --platinum: #DAE2DF;
+    --quicksilver: #A2A7A5;
+    --dimgrey: #6D696A;
+    --lightblue:rgb(177, 177, 255);
+}
+/* font family incase mont doesnt load */
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+html { 
+    scroll-behavior: smooth; }
+@font-face {
+    
+    src: url(./montserrat.ttf);
+    font-family: mont;
+}
+body{
+    background-color: var(--quicksilver);
+    
+    }
+/* top of page */
+header{
+
+    font-size:6vw;
+    background-color: var(--dimgrey);
+    color: var(--gainsboro);
+    
+}
+/* page title */
+#kipp{
+    position: absolute
+}
+/* navigation bar section */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+li{
+    list-style: none;
+    padding: 1vw;
+}
+a{
+    text-decoration: none;
+    color: var(--gainsboro);
+    font-size: 4vw;
+  
+}
+a:hover{
+    color: blue;
+}
+/* top section container includes profile image, intro, and about me */
+#top-article{
+    display: flex;
+    
+}
+#landing{
+    background-color: var(--dimgrey);
+    color: var(--gainsboro);
+    border-radius: 3vw 3vw 3vw 3vw;
+    padding: 5vw;
+    display: block;
+    margin: 1vw;
+    padding: 6vw;
+    width: 46vw;
+    word-wrap: break-word;
+}
+#intro{
+    font-size: 5vw;
+}
+#intro2{
+    font-size: 5vw;
+    color: rgb(177, 177, 255);
+    
+}
+#pic{
+    width: 39vw;
+    height: 80vw;
+    
+}
+/* mid section includes deployments, and links */
+#mid-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sites{
+    width: 88vw;
+    filter: blur(0px);
+    margin-bottom: 5px;
+}
+.sites:hover{
+    width: 88vw;
+    border-color: var(--lightblue);
+    border-width: 5px;
+    border-style: solid;
+    filter: blur(0px);
+    box-shadow: inset  0px 0px 10px px;
+   
+
+}
+#site2{
+    width: 2vh;
+   
+}
+#sites-title{
+    
+    display: flex;
+    padding: 5vw;
+    color: var(--dimgrey);
+    margin-bottom: 4vw;
+    width: 10vw;
+    justify-content: center;
+    font-size: 7vw;
+}
+#bottom-article{
+    display: flex;
+    justify-content: center;
+}
+.sites2{
+    width: 44vw;
+    filter: blur(0px);
+    margin: 5px;
+}
+.sites2:hover{
+    width: 44vw;
+    border-color: var(--lightblue);
+    border-width: 5px;
+    border-style: solid;
+    filter: blur(0px);
+    box-shadow: inset  0px 0px 10px px;
+   
+}
+/* bottom section footer includes social media placeholder */
+footer{
+    background-color: var(--dimgrey);
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}   
+#icons{
+    display: flex;
+    justify-content: center;
+}
+#iconsimg{
+    width: 40vw;
+    margin-top: 10vw;
+}
+
+
+
+/* settings for desktop */
+@media only screen and (min-width: 460px){
+header{
+    font-size:4vw;
+}
+/* nav links */
+a{
+       
+    font-size: 2.5vw; 
+}
+/* profile image */
+#pic{
+    width: 25vw;
+    height: 40vw;
+}
+/* intro and about me */
+#top-article{
+    height: 40vw;
+}
+#landing{
+    margin: 2vw;
+    padding: 6vw;
+    width: 58vw;
+}
+#intro{
+    font-size: 3vw;
+}
+#intro2{
+    font-size: 2vw;
+}
+/* mid section inclues deployments and links */
+.sites2{
+    width: 44vw;
+    filter: blur(2px);
+}
+.sites2:hover{
+    width: 44vw;
+    border-color: var(--lightblue);
+    border-width: 5px;
+    border-style: solid;
+    filter: blur(0px);
+    box-shadow: inset  0px 0px 10px px;
+   
+}
+.sites{
+    width: 88vw;
+    filter: blur(2px);
+}
+.sites:hover{
+    width: 88vw;
+    border-color: var(--lightblue);
+    border-width: 5px;
+    border-style: solid;
+    filter: blur(0px);
+    box-shadow: inset  0px 0px 10px px;
+   
+
+}
+}
